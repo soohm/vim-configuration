@@ -14,7 +14,7 @@ Plugin 'gmarik/Vundle.vim'
 
 " Configure all plugins here
 
-
+" The solarized color scheme
 Plugin 'altercation/vim-colors-solarized.git'
 
 
@@ -54,7 +54,8 @@ filetype plugin indent on    " required
 
 " -------------------------------------------------------------------
 
-syntax enable
+syntax on 
+
 set background=dark
 let g:solarized_termtrans=1
 let g:solarized_contrast="high"
