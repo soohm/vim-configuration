@@ -17,10 +17,11 @@ Plugin 'gmarik/Vundle.vim'
 " The solarized color scheme
 Plugin 'altercation/vim-colors-solarized.git'
 
+" The monokai color scheme
+Plugin 'sickill/vim-monokai.git'
 
-
-
-
+" The jellybeans color scheme
+Plugin 'nanotech/jellybeans.vim'
 
 " -------------------------------------------------------------------
 
@@ -54,19 +55,24 @@ filetype plugin indent on    " required
 
 " -------------------------------------------------------------------
 
+" Enable syntax highlighting
 syntax on 
 
+" Configure solarized color scheme
 set background=dark
 let g:solarized_termtrans=1
 let g:solarized_contrast="high"
 let g:solarized_termcolors=16
 colorscheme solarized
 
+" Default file encoding
 set encoding=utf-8
 set fileencoding=utf-8
 
+" Show line numbers
 set number
 
+" Configure tabstop behaviour
 set tabstop=4
 set shiftwidth=4
 set expandtab
