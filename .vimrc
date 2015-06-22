@@ -23,6 +23,9 @@ Plugin 'sickill/vim-monokai.git'
 " The jellybeans color scheme
 Plugin 'nanotech/jellybeans.vim'
 
+" The Ctrl-P plugin
+Plugin 'kien/ctrlp.vim'
+
 " -------------------------------------------------------------------
 
 " The following are examples of different formats supported.
@@ -76,4 +79,8 @@ set number
 set tabstop=4
 set shiftwidth=4
 set expandtab
+
+" Configure Ctrl-P plugin
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
 
