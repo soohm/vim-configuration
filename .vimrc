@@ -26,6 +26,9 @@ Plugin 'nanotech/jellybeans.vim'
 " The Ctrl-P plugin
 Plugin 'kien/ctrlp.vim'
 
+" The NerdTree plugin
+Plugin 'scrooloose/nerdtree'
+
 " -------------------------------------------------------------------
 
 " The following are examples of different formats supported.
@@ -83,4 +86,13 @@ set expandtab
 " Configure Ctrl-P plugin
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
+
+" Configure NerdTree plugin
+" Open NerdTree automatically when Vim starts and no files were specified
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+" Map NerdTree open command
+map <C-n> :NERDTreeToggle<CR>
+" Be able to close Vim if the only open window is a NerdTree
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
