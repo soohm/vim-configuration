@@ -29,6 +29,9 @@ Plugin 'kien/ctrlp.vim'
 " The NerdTree plugin
 Plugin 'scrooloose/nerdtree'
 
+" The Rust language plugin
+Plugin 'rust-lang/rust.vim'
+
 " -------------------------------------------------------------------
 
 " The following are examples of different formats supported.
