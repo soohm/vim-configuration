@@ -86,8 +86,10 @@ set number
 
 " Configure tabstop behaviour
 set tabstop=4
-set shiftwidth=4
 set expandtab
+set softtabstop=4
+set shiftwidth=4
+set shiftround
 
 " Configure Ctrl-P plugin
 let g:ctrlp_map = '<c-p>'
