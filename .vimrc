@@ -29,6 +29,9 @@ Plugin 'kien/ctrlp.vim'
 " The NerdTree plugin
 Plugin 'scrooloose/nerdtree'
 
+" The Syntastic plugin
+Plugin 'scrooloose/syntastic'
+
 " The Rust language plugin
 Plugin 'rust-lang/rust.vim'
 
@@ -98,4 +101,14 @@ autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 map <C-n> :NERDTreeToggle<CR>
 " Be able to close Vim if the only open window is a NerdTree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+
+" Configure Syntastic plugin
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
 
