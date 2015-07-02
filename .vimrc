@@ -35,6 +35,9 @@ Plugin 'scrooloose/syntastic'
 " The Rust language plugin
 Plugin 'rust-lang/rust.vim'
 
+" A good plugin for Erlang
+Plugin 'jimenezrick/vimerl'
+
 " -------------------------------------------------------------------
 
 " The following are examples of different formats supported.
