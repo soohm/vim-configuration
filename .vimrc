@@ -41,6 +41,9 @@ Plugin 'jimenezrick/vimerl'
 " A plugin for Haskell
 Plugin 'lukerandall/haskellmode-vim'
 
+" A plugin for Elixir
+Plugin 'elixir-lang/vim-elixir'
+
 " -------------------------------------------------------------------
 
 " The following are examples of different formats supported.
