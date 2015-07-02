@@ -38,6 +38,9 @@ Plugin 'rust-lang/rust.vim'
 " A good plugin for Erlang
 Plugin 'jimenezrick/vimerl'
 
+" A plugin for Haskell
+Plugin 'lukerandall/haskellmode-vim'
+
 " -------------------------------------------------------------------
 
 " The following are examples of different formats supported.
@@ -116,4 +119,8 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+
+" Configure Haskell plugin
+au BufEnter *.hs compiler ghc
+:let g:haddock_browser="/opt/google/chrome/google-chrome --enable-plugins"
 
